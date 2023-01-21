@@ -1,5 +1,1 @@
-pip install Pillow
-pip install django-image-uploader-widget
-pip install django-bootstrap-v5
-pip install django-cleanup
-pip install easy-thumbnails
+pip install Pillow django-image-uploader-widget django-bootstrap-v5 django-cleanup easy-thumbnails
