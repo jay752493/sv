@@ -1,0 +1,43 @@
+header h1 { 
+font-size : 40pt ; 
+text-transform: uppercase ; 
+text-align : center ; 
+}
+
+nav { 
+font-size : 16pt ; 
+width : 180px ; 
+float : left ; 
+}
+
+nav a { 
+display : block; 
+margin : 1Opx 0px ; 
+}
+
+section { 
+margin-left : 170px ;
+} 
+
+.mr-3 {
+    height: 140px;
+}
+.main-image, .additional-image {
+    height: 300px;
+}
+
+body {
+    --iuw-background: #aae1eb93 !important;
+    --iuw-border-color: #{$dashborder} !important;
+    --iuw-color: #{$dashgray} !important;
+    --iuw-placeholder-text-color: #{$dashgray} !important;
+    --iuw-dropzone-background: #{$dashlight} !important;
+    --iuw-image-preview-border: #{$dashborder} !important;
+    --iuw-image-preview-shadow: rgba(0, 0, 0, 0.3);
+    --iuw-add-image-background: #{$dashlight} !important;
+    --iuw-add-image-color: #{$dashgray} !important;
+}
+
+div.mb-3.row {
+    width: 200px;
+}

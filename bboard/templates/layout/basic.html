@@ -1,0 +1,30 @@
+{% load static %}
+{% load thumbnail %}
+{% load bootstrap5 %}
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'bboard/style.css' %}">
+        <meta charset="UTF-8">
+        <title>{% block title %} Все лица {% endblock %}:: БД лиц </title>
+        {% block head %}
+        {% endblock %}
+    </head>
+    <body>
+        <header>
+            <h1>АИС "Лица"</h1>
+        </header>
+        <nav>
+            <a href="{% url 'index' %}">Все лица</a>
+            <a href="{% url 'add'%}">Добавить лицо</a>
+            {% for rubric in rubrics %}
+            <a href="{% url 'by_rubric' rubric.id %}">{{ rubric.name }}</a>
+            {% endfor %}
+        </nav>
+        <section>
+            {% block content %}
+            {% endblock %}
+        </section>
+    </body>
+</html>
