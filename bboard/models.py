@@ -8,7 +8,9 @@ def get_timestamp_path(instance, filename):
 # Create your models here.
 
 class Bb(models.Model):
-    title = models.CharField(max_length=50, verbose_name='Заголовок')
+    title = models.CharField(max_length=50, verbose_name='Фамилия')
+    firstname = models.CharField(max_length=50, verbose_name='Имя', null=True)
+    midname = models.CharField(max_length=50, verbose_name='Отчество', null=True, blank=True)
     content = models.TextField(null=True, blank=True, verbose_name='Комментарий')
     published = models.DateTimeField(auto_now_add=True, db_index=True, verbose_name='Дата добавления')
     rubric = models.ForeignKey('Rubric', null = True, on_delete=models.PROTECT, verbose_name='Категория')
